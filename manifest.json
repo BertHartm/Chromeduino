@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Chromeduino",
+  "description": "Program an arduino in Chromium",
+  "version": "0.1",
+
+  "permissions": [
+    "usb"
+  ],
+  "optional_permissions": [{"usbDevices": [
+    {"vendorId": 9025, "productId": 67 }, // arduino uno (0x2341:0x0043)
+    {"vendorId": 1452, "productId": 34057 } // facetime camera
+  ]}],
+  
+  "app": {
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    }
+  }
+}
