@@ -1,7 +1,7 @@
 'use strict'
 
-var VENDOR_ID = 0x2341;// 9025;//
-var PRODUCT_ID = 0x0043;//67;//
+var VENDOR_ID = 0x067b;//0x2341;//9025;//
+var PRODUCT_ID = 0xaaa0;//0x0043;//67;//
 var DEVICE_INFO = {"vendorId": VENDOR_ID, "productId": PRODUCT_ID};
 
 var numdev;
