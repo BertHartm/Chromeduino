@@ -1,7 +1,12 @@
 'use strict'
 
-var VENDOR_ID = 0x067b;//0x2341;//9025;//
-var PRODUCT_ID = 0xaaa0;//0x0043;//67;//
+// Microsoft GPS Serial adapter
+//var VENDOR_ID = 0x067b;
+//var PRODUCT_ID = 0xaaa0;
+// Arduino Uno R3
+var VENDOR_ID = 0x2341;
+var PRODUCT_ID = 0x0043;
+
 var DEVICE_INFO = {"vendorId": VENDOR_ID, "productId": PRODUCT_ID};
 
 var numdev;
@@ -9,7 +14,7 @@ var numint;
 function descriptorCallback(desarr) {
     console.log("desarr");
     console.log(desarr);
-    numint.textcontent = desarr.length;
+    numint.textContent = desarr.length;
 }
 
 function usbCallback(devarr) {
